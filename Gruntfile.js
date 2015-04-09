@@ -46,6 +46,7 @@ module.exports = function(grunt) {
 			core: {
 				files: {
 					'css/reveal.css': 'css/reveal.scss',
+					'css/overrides.css': 'css/overrides.scss'
 				}
 			},
 			themes: {
@@ -139,7 +140,7 @@ module.exports = function(grunt) {
 				tasks: 'css-themes'
 			},
 			css: {
-				files: [ 'css/reveal.scss' ],
+				files: [ 'css/reveal.scss', 'css/overrides.scss' ],
 				tasks: 'css-core'
 			},
 			jade: {

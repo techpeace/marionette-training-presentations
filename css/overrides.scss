@@ -1,0 +1,57 @@
+$primary-color: #c10000;
+$secondary-color: #494847;
+
+.reveal .slides section {
+  text-align: left;
+
+  // Section types
+
+  &.title {
+    text-align: center;
+  }
+
+  &.interstitial {
+    text-align: center;
+
+    h1 {
+      color: white;
+      text-transform: uppercase;
+    }
+
+  }
+
+  // Layout utility classes
+
+  .right {
+    width: 50%;
+    float: right;
+  }
+
+  .left {
+    width: 50%;
+    float: left;
+  }
+
+  // Prevent image decoration
+
+  img {
+    border: none;
+    box-shadow: none;
+  }
+
+  // Headers
+
+  h2 {
+    border-bottom: 4px solid $primary-color;
+  }
+
+  h1, h2, h3, h4, h5 {
+    color: $primary-color;
+    text-transform: none;
+
+    &.secondary {
+      color: $secondary-color;
+    }
+  }
+}
+

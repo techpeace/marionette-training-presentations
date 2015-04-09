@@ -1,0 +1,25 @@
+.reveal .slides section {
+  text-align: left; }
+  .reveal .slides section.title {
+    text-align: center; }
+  .reveal .slides section.interstitial {
+    text-align: center; }
+    .reveal .slides section.interstitial h1 {
+      color: white;
+      text-transform: uppercase; }
+  .reveal .slides section .right {
+    width: 50%;
+    float: right; }
+  .reveal .slides section .left {
+    width: 50%;
+    float: left; }
+  .reveal .slides section img {
+    border: none;
+    box-shadow: none; }
+  .reveal .slides section h2 {
+    border-bottom: 4px solid #c10000; }
+  .reveal .slides section h1, .reveal .slides section h2, .reveal .slides section h3, .reveal .slides section h4, .reveal .slides section h5 {
+    color: #c10000;
+    text-transform: none; }
+    .reveal .slides section h1.secondary, .reveal .slides section h2.secondary, .reveal .slides section h3.secondary, .reveal .slides section h4.secondary, .reveal .slides section h5.secondary {
+      color: #494847; }
