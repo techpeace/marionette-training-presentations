@@ -29,6 +29,19 @@ module.exports = function(grunt) {
 			}
 		},
 
+		jade: {
+			compile: {
+				options: {
+					data: {
+						debug: false
+					}
+				},
+				files: {
+					"index.html": ["index.jade"]
+				}
+			}
+		},
+
 		sass: {
 			core: {
 				files: {
@@ -129,6 +142,10 @@ module.exports = function(grunt) {
 				files: [ 'css/reveal.scss' ],
 				tasks: 'css-core'
 			},
+			jade: {
+				files: [ 'index.jade' ],
+				tasks: 'jade'
+			},
             html: {
                 files: [ 'index.html']
             }
@@ -146,6 +163,8 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks( 'grunt-contrib-connect' );
 	grunt.loadNpmTasks( 'grunt-autoprefixer' );
 	grunt.loadNpmTasks( 'grunt-zip' );
+	grunt.loadNpmTasks('grunt-contrib-jade');
+
 
 	// Default task
 	grunt.registerTask( 'default', [ 'css', 'js' ] );
