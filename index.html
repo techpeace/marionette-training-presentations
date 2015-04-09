@@ -1,0 +1,26 @@
+<!DOCTYPE html(lang='en')><head><meta charset="utf-8"/><title>Marionette 101</title><meta name="description" content="An introduction to the Marionette.js framework."/><meta name="author" content="Sam Saccone"/><meta name="apple-mobile-web-app-capable" content="yes"/><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui"/><link rel="stylesheet" href="css/reveal.css"/><link id="theme" rel="stylesheet" href="css/theme/white.css"/><link rel="stylesheet" href="css/overrides.css"/><!-- Code syntax highlighting--><link rel="stylesheet" href="lib/css/zenburn.css"/><!-- Printing and PDF exports--><script>var link = document.createElement( 'link' );
+link.rel = 'stylesheet';
+link.type = 'text/css';
+link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+document.getElementsByTagName( 'head' )[0].appendChild( link );
+</script></head><body><div class="reveal"><!-- Any section element inside of this container is displayed as a slide--><div class="slides"><section class="title"><h1>Marionette.js</h1><img src="images/marionettelogo.png"/><h2 class="secondary">The Backbone Framework</h2></section><section><h2>Marionette is...</h2><p>An extension framework on top of Backbone.</p><p>It simplifies your Backbone application code with robust views and architecture solutions.</p></section><section><h2>Add as You Go</h2><p>Marionette is not an all or nothing thing. You can add it as you need on top of a large app regardless of what it is built with.</p><p>And you can build on top of it.</p></section><section><h2>What Backbone Gives You</h2><ul><li>Models</li><li>Views</li><li>Collections</li></ul></section><section><h2>The Backbone Trap</h2><p>But Backbone does not help you so much on the view layer.</p></section><section><h2>Render</h2><p>Implementing your own render solution</p><pre><code>render: function(){
+  this.$el.html(`....`)
+}
+</code></pre></section><section><h2>Marionette is View-centric</h2><div class="left"><ul><li>Views are the focus</li><li>Render is taken care of for you</li><li>+ several components to help you build complex apps</li></ul></div><div class="right"><img src="images/distribution-of-code.png"/></div></section><section data-background="#c10000" class="interstitial"><h1>Examples</h1></section><section><h2>Adding dynamic interactions to static DOM</h2><iframe width="100%" height="300" src="//jsfiddle.net/6ybg8n0h/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe></section><section><h2>Refactoring jQuery DOM (Before)</h2><iframe width="100%" height="300" src="//jsfiddle.net/80vm06L2/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe></section><section><h2>Refactoring jQuery DOM (After)</h2><iframe width="100%" height="300" src="//jsfiddle.net/pz2ndfwe/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe></section><section><h2>Refactoring Backbone Views (Before)</h2><iframe width="100%" height="300" src="//jsfiddle.net/dr1aj9gn/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe></section><section><h2>Refactoring Backbone Views (After)</h2><iframe width="100%" height="300" src="//jsfiddle.net/pz2ndfwe/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe></section></div></div><script src="lib/js/head.min.js"></script><script src="js/reveal.js"></script><script>// Full list of configuration options available at:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+  controls: true,
+  progress: true,
+  history: true,
+  center: true,
+  transition: 'slide', // none/fade/slide/convex/concave/zoom
+  // Optional reveal.js plugins
+  dependencies: [
+    { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+    { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+    { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+    { src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+    { src: 'plugin/zoom-js/zoom.js', async: true },
+    { src: 'plugin/notes/notes.js', async: true }
+  ]
+});</script></body>
